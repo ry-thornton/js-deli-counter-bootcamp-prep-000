@@ -7,6 +7,15 @@ function takeANumber (katzDeliLine, newName) {
   return `Welcome, ${newName}. You are number ${number} in line.`
 }
 
+var ticketNum = 0;
+
+function takeANumber(katzDeliLine, ticketNum) {
+  ticketNum++;
+  katzDeliLine.push(ticketNum)
+  return `Welcome. You have ticket number ${ticketNum}.`
+}
+
+
 function nowServing(katzDeliLine) {
   var number = katzDeliLine.length
   if (number === 0) {
